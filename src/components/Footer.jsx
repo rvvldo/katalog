@@ -7,35 +7,56 @@ const Footer = () => {
     };
 
     return (
-        <footer id="contact" className="py-12 sm:py-14 md:py-16 px-4 sm:px-6 lg:px-8 bg-slate-900 border-t border-white/10">
-            <div className="max-w-7xl mx-auto">
-                {/* Footer Grid - Responsive: 1 col mobile, 2 cols tablet, 4 cols desktop */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 md:gap-12 mb-10 sm:mb-12">
+        <footer id="contact" className="py-12 sm:py-24 md:py-32 bg-transparent relative mt-8 md:mt-20">
+            <div className="container-wide">
+
+                {/* Huge CTA Banner */}
+                <div className="glass-panel relative overflow-hidden p-6 sm:p-14 md:p-24 lg:p-32 rounded-[16px] md:rounded-[40px] mb-12 md:mb-24 lg:mb-32 flex flex-col lg:flex-row items-center justify-between gap-6 md:gap-16 border-cyan-500/20 text-center lg:text-left">
+                    <div className="absolute top-0 right-0 w-[250px] sm:w-[400px] md:w-[600px] h-[250px] sm:h-[400px] md:h-[600px] bg-cyan-900/40 blur-[60px] md:blur-[100px] -translate-y-1/2 translate-x-1/3 rounded-full pointer-events-none z-0"></div>
+
+                    <div className="relative z-10 max-w-2xl mx-auto lg:mx-0">
+                        <div className="inline-block px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-white/5 border border-white/10 mb-4 md:mb-8">
+                            <span className="text-cyan-400 text-[10px] md:text-sm font-bold uppercase tracking-widest">Kolaborasi</span>
+                        </div>
+                        <h2 className="text-section text-white leading-[1.1] mb-5 md:mb-8">
+                            Revolusi <span className="text-cyan-400">Digital</span><br className="block sm:hidden" /> Anda<br className="hidden md:block" /> Dimulai<br className="hidden lg:block" /> Dari Sini.
+                        </h2>
+                    </div>
+
+                    <div className="relative z-10 flex-shrink-0 w-full lg:w-auto mt-2 sm:mt-0">
+                        <a href="mailto:lierout641@gmail.com" className="btn-primary-fashion py-3 px-6 md:py-6 md:px-12 text-[11px] sm:text-sm md:text-lg w-full lg:w-auto justify-center">
+                            Mulai Diskusi
+                        </a>
+                    </div>
+                </div>
+
+                {/* Footer Grid - Large scale */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-16 lg:gap-24 mb-10 md:mb-20 border-t border-white/10 pt-10 md:pt-20 text-center sm:text-left">
                     {/* Brand */}
                     <div className="sm:col-span-2 lg:col-span-1">
-                        <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 sm:mb-4">
+                        <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-white tracking-tighter mb-4 md:mb-8 leading-none">
                             OUTLIER
                         </h3>
-                        <p className="text-gray-400 text-sm sm:text-base mb-4 sm:mb-5 leading-relaxed">
-                            Creative agency yang membangun brand yang menentang gravitasi.
+                        <p className="text-gray-400 text-xs sm:text-base md:text-lg font-medium leading-relaxed mb-6 md:mb-10 max-w-sm mx-auto sm:mx-0">
+                            Creative agency yang membangun brand eksklusif di era digital.
                         </p>
-                        <div className="flex gap-3">
-                            <a href="#" className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/5 flex items-center justify-center hover:bg-cyan-400 hover:text-black transition-all text-white">
-                                <Instagram className="w-5 h-5" />
+                        <div className="flex gap-2 sm:gap-3 md:gap-4 justify-center sm:justify-start">
+                            <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-[12px] sm:rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-cyan-400 hover:text-black hover:border-cyan-400 transition-all text-white hover:-translate-y-2 duration-300">
+                                <Instagram className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                             </a>
-                            <a href="#" className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/5 flex items-center justify-center hover:bg-cyan-400 hover:text-black transition-all text-white">
-                                <Twitter className="w-5 h-5" />
+                            <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-[12px] sm:rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-cyan-400 hover:text-black hover:border-cyan-400 transition-all text-white hover:-translate-y-2 duration-300">
+                                <Twitter className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                             </a>
-                            <a href="#" className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/5 flex items-center justify-center hover:bg-cyan-400 hover:text-black transition-all text-white">
-                                <Linkedin className="w-5 h-5" />
+                            <a href="#" className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-[12px] sm:rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-cyan-400 hover:text-black hover:border-cyan-400 transition-all text-white hover:-translate-y-2 duration-300">
+                                <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                             </a>
                         </div>
                     </div>
 
                     {/* Services */}
                     <div>
-                        <h4 className="text-base sm:text-lg font-bold text-white mb-3 sm:mb-4">Layanan</h4>
-                        <ul className="space-y-2 text-gray-400 text-sm sm:text-base">
+                        <h4 className="text-[13px] sm:text-base md:text-lg font-black text-white uppercase tracking-widest mb-4 md:mb-8">Layanan</h4>
+                        <ul className="space-y-3 sm:space-y-4 md:space-y-6 text-gray-400 font-medium text-[11px] sm:text-base md:text-lg">
                             <li><a href="#services" className="hover:text-cyan-400 transition-colors">Website Portfolio</a></li>
                             <li><a href="#services" className="hover:text-cyan-400 transition-colors">Website UMKM</a></li>
                             <li><a href="#services" className="hover:text-cyan-400 transition-colors">UI/UX Design</a></li>
@@ -45,39 +66,41 @@ const Footer = () => {
 
                     {/* Company */}
                     <div>
-                        <h4 className="text-base sm:text-lg font-bold text-white mb-3 sm:mb-4">Perusahaan</h4>
-                        <ul className="space-y-2 text-gray-400 text-sm sm:text-base">
+                        <h4 className="text-[13px] sm:text-base md:text-lg font-black text-white uppercase tracking-widest mb-4 md:mb-8">Perusahaan</h4>
+                        <ul className="space-y-3 sm:space-y-4 md:space-y-6 text-gray-400 font-medium text-[11px] sm:text-base md:text-lg">
                             <li><a href="#" className="hover:text-cyan-400 transition-colors">Tentang Kami</a></li>
-                            <li><a href="#" className="hover:text-cyan-400 transition-colors">Portfolio</a></li>
+                            <li><a href="#portfolio" className="hover:text-cyan-400 transition-colors">Portfolio</a></li>
                             <li><a href="#" className="hover:text-cyan-400 transition-colors">Blog</a></li>
                             <li><a href="#" className="hover:text-cyan-400 transition-colors">Karir</a></li>
                         </ul>
                     </div>
 
                     {/* Contact */}
-                    <div>
-                        <h4 className="text-base sm:text-lg font-bold text-white mb-3 sm:mb-4">Hubungi Kami</h4>
-                        <p className="text-gray-400 text-sm sm:text-base mb-3 sm:mb-4 leading-relaxed">
-                            Siap meluncurkan proyek Anda?
+                    <div className="sm:col-span-2 lg:col-span-1">
+                        <h4 className="text-[13px] sm:text-base md:text-lg font-black text-white uppercase tracking-widest mb-4 md:mb-8">Hubungi Kami</h4>
+                        <p className="text-gray-400 text-xs sm:text-base md:text-lg font-medium leading-relaxed mb-4 md:mb-8">
+                            Siap meluncurkan proyek fenomenal?
                         </p>
-                        <a href="mailto:hello@outlier.com" className="flex items-center gap-2 text-cyan-400 text-sm sm:text-base hover:text-cyan-300 transition-colors">
-                            <Mail className="w-4 h-4" />
-                            lierout641@gmail.com
+                        <a href="mailto:lierout641@gmail.com" className="inline-flex items-center justify-center sm:justify-start gap-2.5 sm:gap-3 md:gap-4 text-cyan-400 text-[13px] sm:text-lg md:text-xl font-bold hover:text-cyan-300 transition-colors mx-auto sm:mx-0 w-full sm:w-auto">
+                            <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-cyan-900/40 flex items-center justify-center border border-cyan-500/20 flex-shrink-0">
+                                <Mail className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 h-5" />
+                            </div>
+                            <span className="truncate">lierout641@gmail.com</span>
                         </a>
                     </div>
                 </div>
 
-                {/* Bottom - Responsive */}
-                <div className="pt-6 sm:pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
-                    <p className="text-gray-500 text-xs sm:text-sm text-center sm:text-left">
-                        © 2026 <span className="text-cyan-400 font-semibold">Outlier</span>. All rights reserved.
+                {/* Bottom Wide Bar */}
+                <div className="pt-6 md:pt-12 border-t border-white/10 flex flex-col-reverse md:flex-row justify-between items-center gap-4 md:gap-8">
+                    <p className="text-gray-500 text-[10px] sm:text-sm md:text-base font-medium uppercase tracking-widest text-center md:text-left">
+                        © 2026 <span className="text-cyan-400 font-black">OUTLIER</span>. All right reserved.
                     </p>
                     <button
                         onClick={scrollToTop}
-                        className="flex items-center gap-2 text-gray-500 hover:text-cyan-400 text-xs sm:text-sm transition-colors"
+                        className="btn-secondary-fashion py-2.5 px-5 sm:py-3 sm:px-6 md:py-4 md:px-8 gap-2.5 md:gap-4 bg-white/5 border-white/10 text-[9px] sm:text-xs md:text-sm"
                     >
-                        <span>Kembali ke Atas</span>
-                        <ArrowUp className="w-4 h-4" />
+                        Kembali Atas
+                        <ArrowUp className="w-3 h-3 md:w-5 md:h-5" />
                     </button>
                 </div>
             </div>

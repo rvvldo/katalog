@@ -1,64 +1,67 @@
 import React from 'react';
-import { Rocket, Zap } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 
 const Hero = () => {
     return (
-        <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 sm:py-24 lg:py-32 bg-gradient-to-b from-slate-900 to-slate-800">
-            <div className="max-w-7xl mx-auto w-full text-center">
-                {/* Badge - Responsive */}
-                <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 mb-6 sm:mb-8">
-                    <span className="text-cyan-400 text-xs sm:text-sm font-semibold uppercase tracking-wider">
+        <section className="relative min-h-[100dvh] flex items-center justify-center pt-20 pb-10 md:pt-28 md:pb-16 overflow-hidden">
+            <div className="container-wide w-full flex flex-col items-center justify-center text-center z-10">
+
+                {/* Badge */}
+                <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full glass-panel mb-5 md:mb-8 animate-fadeIn">
+                    <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    <span className="text-cyan-400 text-[9px] md:text-xs font-bold uppercase tracking-widest">
                         Beyond The Ordinary
                     </span>
                 </div>
 
-                {/* Title - Very Responsive */}
-                <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black mb-4 sm:mb-6 text-white leading-tight">
+                {/* Massive Title */}
+                <h1 className="text-giant text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-cyan-200 mb-2 md:mb-6 animate-fadeIn" style={{ animationDelay: '0.1s', animationFillMode: 'both' }}>
                     OUTLIER
                 </h1>
 
-                {/* Subtitle - Responsive sizing */}
-                <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 mb-3 sm:mb-4 max-w-4xl mx-auto px-4">
+                {/* Subtitle */}
+                <p className="text-sm sm:text-lg md:text-3xl text-gray-300 font-medium mb-2 md:mb-4 max-w-4xl mx-auto animate-fadeIn px-4" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
                     Melangkah Lebih Jauh dari yang Biasa
                 </p>
 
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-400 mb-8 sm:mb-12 max-w-3xl mx-auto px-4 leading-relaxed">
-                    <span className="text-cyan-400 font-medium">Kami menciptakan pengalaman digital</span> <br /> yang membawa brand Anda melampaui gravitasi
+                <p className="text-xs sm:text-sm md:text-xl text-gray-400 mb-6 md:mb-12 max-w-2xl mx-auto leading-relaxed animate-fadeIn px-2 md:px-4" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
+                    Kami menciptakan pengalaman digital yang membawa brand Anda melampaui gravitasi dengan desain premium dan teknologi terkini.
                 </p>
 
-                {/* CTA Buttons - Stack on mobile, row on tablet+ */}
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-12 sm:mb-16 px-4">
-                    <a
-                        href="#pricing"
-                        className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold text-sm sm:text-base hover:scale-105 transition-transform shadow-lg shadow-cyan-500/30"
-                    >
-
+                {/* CTAs */}
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-2 md:gap-4 mb-10 md:mb-20 animate-fadeIn w-full max-w-[250px] sm:max-w-none" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
+                    <a href="#pricing" className="btn-primary-fashion w-full sm:w-auto justify-center text-[10px] md:text-sm py-2.5 md:py-4">
                         Jelajahi Paket
                     </a>
-                    <a
-                        href="#services"
-                        className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-full border-2 border-cyan-400 text-white font-bold text-sm sm:text-base hover:bg-cyan-400/10 transition-all"
-                    >
+                    <a href="#services" className="btn-secondary-fashion w-full sm:w-auto justify-center text-[10px] md:text-sm py-2.5 md:py-4">
                         Lihat Layanan
                     </a>
                 </div>
 
-                {/* Stats - Better responsive grid */}
-                <div className="grid grid-cols-3 gap-4 sm:gap-8 lg:gap-12 max-w-4xl mx-auto pt-6 sm:pt-8 border-t border-white/10 px-4">
-                    <div className="text-center">
-                        <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-cyan-400 mb-1 sm:mb-2">10+</div>
-                        <div className="text-xs sm:text-sm md:text-base text-gray-400 uppercase tracking-wide">Proyek</div>
+                {/* Stats */}
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 md:gap-6 w-full max-w-4xl mx-auto animate-fadeIn px-2" style={{ animationDelay: '0.5s', animationFillMode: 'both' }}>
+                    <div className="glass-panel py-4 md:py-8 px-4 md:px-6 text-center hover:-translate-y-2 transition-transform duration-300">
+                        <div className="text-3xl md:text-5xl font-black text-cyan-400 mb-0.5 md:mb-2">10+</div>
+                        <div className="text-[10px] sm:text-sm text-gray-400 uppercase tracking-widest font-bold">Proyek</div>
                     </div>
-                    <div className="text-center">
-                        <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-cyan-400 mb-1 sm:mb-2">5+</div>
-                        <div className="text-xs sm:text-sm md:text-base text-gray-400 uppercase tracking-wide">Klien</div>
+                    <div className="glass-panel py-4 md:py-8 px-4 md:px-6 text-center hover:-translate-y-2 transition-transform duration-300">
+                        <div className="text-3xl md:text-5xl font-black text-cyan-400 mb-0.5 md:mb-2">5+</div>
+                        <div className="text-[10px] sm:text-sm text-gray-400 uppercase tracking-widest font-bold">Klien</div>
                     </div>
-                    <div className="text-center">
-                        <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-cyan-400 mb-1 sm:mb-2">100%</div>
-                        <div className="text-xs sm:text-sm md:text-base text-gray-400 uppercase tracking-wide">Kepuasan</div>
+                    <div className="glass-panel py-4 md:py-8 px-4 md:px-6 text-center hover:-translate-y-2 transition-transform duration-300">
+                        <div className="text-3xl md:text-5xl font-black text-cyan-400 mb-0.5 md:mb-2">100%</div>
+                        <div className="text-[10px] sm:text-sm text-gray-400 uppercase tracking-widest font-bold">Kepuasan</div>
                     </div>
                 </div>
+
+                {/* Scroll Indicator */}
+                <a href="#services" className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 text-gray-500 hover:text-cyan-400 transition-colors animate-bounce">
+                    <ArrowDown className="w-4 h-4 md:w-6 md:h-6" />
+                </a>
             </div>
+
+            {/* Ambient Background Glow */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[800px] md:h-[800px] bg-cyan-900/20 rounded-full blur-[80px] md:blur-[120px] pointer-events-none -z-10"></div>
         </section>
     );
 };
