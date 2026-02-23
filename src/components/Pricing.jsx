@@ -71,8 +71,8 @@ const Pricing = () => {
                             <div
                                 key={idx}
                                 className={`bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-7 md:p-8 hover:-translate-y-2 transition-all ${pkg.highlight
-                                        ? 'border-2 border-cyan-400 md:col-span-2 lg:col-span-1 lg:scale-105 shadow-xl shadow-cyan-500/20'
-                                        : 'border border-white/10'
+                                    ? 'border-2 border-cyan-400 md:col-span-2 lg:col-span-1 lg:scale-105 shadow-xl shadow-cyan-500/20'
+                                    : 'border border-white/10'
                                     }`}
                             >
                                 {/* Popular Badge */}
@@ -111,8 +111,8 @@ const Pricing = () => {
 
                                 {/* Button */}
                                 <button className={`w-full py-3 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-all ${pkg.highlight
-                                        ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:scale-105 shadow-lg shadow-cyan-500/30'
-                                        : 'bg-white/5 text-white border border-white/10 hover:bg-white/10 hover:border-cyan-400/30'
+                                    ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:scale-105 shadow-lg shadow-cyan-500/30'
+                                    : 'bg-white/5 text-white border border-white/10 hover:bg-white/10 hover:border-cyan-400/30'
                                     }`}>
                                     Pilih {pkg.name}
                                 </button>

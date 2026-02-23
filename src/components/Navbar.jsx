@@ -36,7 +36,7 @@ const Navbar = () => {
                             href="#contact"
                             className="px-4 lg:px-6 py-2 lg:py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold text-sm lg:text-base hover:scale-105 transition-transform shadow-lg shadow-cyan-500/20"
                         >
-                            Mulai Sekarang
+                            Pesan Sekarang
                         </a>
                     </div>
 
@@ -68,7 +68,7 @@ const Navbar = () => {
                                 className="block mx-4 mt-4 px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-center font-semibold"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
-                                Mulai Sekarang
+                                Pesan Sekarang
                             </a>
                         </div>
                     </div>
