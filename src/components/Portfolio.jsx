@@ -45,7 +45,7 @@ const Portfolio = () => {
                     </div>
 
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-3 sm:mb-4 text-white px-4">
-                        Project Unggulan
+                        Proyek
                     </h2>
 
                     <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto px-4">

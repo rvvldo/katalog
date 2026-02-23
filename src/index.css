@@ -144,10 +144,6 @@ html {
   background: #0a0520;
 }
 
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #00F0FF, #1E90FF);
-  border-radius: 10px;
-}
 
 ::-webkit-scrollbar-thumb:hover {
   background: #00F0FF;

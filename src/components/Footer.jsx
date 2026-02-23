@@ -37,7 +37,7 @@ const Footer = () => {
                         <h4 className="text-base sm:text-lg font-bold text-white mb-3 sm:mb-4">Layanan</h4>
                         <ul className="space-y-2 text-gray-400 text-sm sm:text-base">
                             <li><a href="#services" className="hover:text-cyan-400 transition-colors">Website Portfolio</a></li>
-                            <li><a href="#services" className="hover:text-cyan-400 transition-colors">Company Profile</a></li>
+                            <li><a href="#services" className="hover:text-cyan-400 transition-colors">Website UMKM</a></li>
                             <li><a href="#services" className="hover:text-cyan-400 transition-colors">UI/UX Design</a></li>
                             <li><a href="#services" className="hover:text-cyan-400 transition-colors">Content Creation</a></li>
                         </ul>
@@ -62,7 +62,7 @@ const Footer = () => {
                         </p>
                         <a href="mailto:hello@outlier.com" className="flex items-center gap-2 text-cyan-400 text-sm sm:text-base hover:text-cyan-300 transition-colors">
                             <Mail className="w-4 h-4" />
-                            hello@outlier.com
+                            lierout641@gmail.com
                         </a>
                     </div>
                 </div>

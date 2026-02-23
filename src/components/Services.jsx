@@ -6,9 +6,8 @@ const servicesData = [
         category: "Produksi Profil",
         items: [
             { title: "Website Portfolio", icon: Share2, desc: "Tampilkan karya terbaik dengan portfolio yang memukau." },
-            { title: "Company Page", icon: Layout, desc: "Halaman perusahaan yang profesional dan modern." },
-            { title: "UI/UX Design", icon: Palette, desc: "Desain antarmuka yang user-friendly dan estetis." },
-            { title: "Landing Page", icon: Code, desc: "Halaman landing dengan konversi tinggi." }
+            { title: "Website UMKM", icon: Layout, desc: "Halaman UMKM yang profesional dan modern." },
+            { title: "UI/UX Design", icon: Palette, desc: "Desain antarmuka yang user-friendly dan estetis." }
         ]
     },
     {
