@@ -21,7 +21,7 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#050510]/90 backdrop-blur-xl border-b border-white/10 py-3' : 'bg-transparent py-5'
+            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-gray-900/60 backdrop-blur-2xl shadow-lg border-b border-white/10 py-3' : 'bg-transparent py-5'
                 }`}
         >
             <div className="container-wide">
@@ -47,7 +47,7 @@ const Navbar = () => {
                     {/* Desktop CTA */}
                     <div className="hidden md:block">
                         <a
-                            href="#contact"
+                            href="#diskusi"
                             className="btn-primary-fashion"
                         >
                             Pesan

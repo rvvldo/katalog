@@ -14,8 +14,8 @@ const websiteData = {
             domain: 'Domain .my.id',
             hosting: 'Hosting Dewaweb',
             designFee: 'Rp 180.000',
-            yearly: { first: 'Rp 650.000', renew: 'Rp 500rb' },
-            quarterly: { first: 'Rp 306.000', renew: 'Rp 126rb' },
+            yearly: { first: 'Rp 650.000' },
+            quarterly: { first: 'Rp 306.000' },
             features: ['Landing page / portfolio', 'Domain .my.id', 'Hosting Dewaweb', 'Desain responsif mobile', '2x revisi gratis'],
         },
         {
@@ -28,8 +28,8 @@ const websiteData = {
             domain: 'Domain .com',
             hosting: 'Hosting Dewaweb',
             designFee: 'Rp 500.000',
-            yearly: { first: 'Rp 2.500.000', renew: 'Rp 2jt' },
-            quarterly: { first: 'Rp 1.055.000', renew: 'Rp 555rb' },
+            yearly: { first: 'Rp 2.500.000' },
+            quarterly: { first: 'Rp 1.055.000' },
             features: ['Website multi-halaman', 'Domain .com', 'Hosting premium', 'Desain korporat', '2x revisi gratis'],
         },
     ],
@@ -83,8 +83,8 @@ const BillingToggle = ({ billing, setBilling }) => (
                 key={opt}
                 onClick={() => setBilling(opt)}
                 className={`px-4 py-1.5 sm:px-8 sm:py-3 rounded-full text-[10px] sm:text-sm font-bold uppercase tracking-widest transition-all duration-400 ${billing === opt
-                        ? 'bg-gradient-to-r from-cyan-400 to-blue-500 text-white shadow-lg'
-                        : 'text-gray-400 hover:text-white'
+                    ? 'bg-gradient-to-r from-cyan-400 to-blue-500 text-white shadow-lg'
+                    : 'text-gray-400 hover:text-white'
                     }`}
             >
                 {opt === 'yearly' ? 'Tahunan' : 'Triwulan'}
@@ -138,7 +138,7 @@ const WebsiteTab = () => {
                                 </div>
                                 <p className="text-[10px] sm:text-base text-gray-400 uppercase tracking-widest font-bold mt-2 sm:mt-4 flex flex-col sm:flex-row gap-0.5 sm:gap-2 justify-center sm:justify-start">
                                     <span>{billing === 'yearly' ? 'Tahun pertama' : 'Triwulan 1'}</span>
-                                    <span className="text-cyan-400">({price.renew} lanjut)</span>
+
                                 </p>
                             </div>
 
@@ -172,10 +172,10 @@ const WebsiteTab = () => {
                             </ul>
 
                             <a
-                                href="#contact"
-                                className={`w-full py-3 sm:py-4 md:py-6 text-center shadow-lg block uppercase tracking-widest font-bold text-[10px] sm:text-sm md:text-base ${pkg.highlight
-                                        ? 'bg-gradient-to-r from-cyan-400 to-blue-500 text-white rounded-[12px] sm:rounded-[16px] md:rounded-[24px] hover:scale-105 transition-transform duration-300'
-                                        : 'btn-secondary-fashion border-white/10 text-white rounded-[12px] sm:rounded-[16px] md:rounded-[24px]'
+                                href="#diskusi"
+                                className={`w-full py-3 sm:py-4 md:py-6 shadow-lg flex items-center justify-center uppercase tracking-widest font-bold text-[10px] sm:text-sm md:text-base ${pkg.highlight
+                                    ? 'bg-gradient-to-r from-cyan-400 to-blue-500 text-white rounded-[12px] sm:rounded-[16px] md:rounded-[24px] hover:scale-105 transition-transform duration-300'
+                                    : 'btn-secondary-fashion border-white/10 text-white rounded-[12px] sm:rounded-[16px] md:rounded-[24px]'
                                     }`}
                             >
                                 Pesan Sekarang
@@ -190,17 +190,17 @@ const WebsiteTab = () => {
                 <h4 className="text-lg md:text-2xl font-black text-white mb-6 md:mb-10 text-center uppercase tracking-widest">
                     <span className="text-cyan-400">+</span> Add-ons Ekstra
                 </h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
+                <div className="grid grid-cols-3 gap-2 md:gap-6 px-2 sm:px-0">
                     {websiteData.addons.map((a, i) => {
                         const Icon = a.icon;
                         return (
-                            <div key={i} className="glass-panel p-4 sm:p-6 md:p-8 text-center hover:border-cyan-400/30 transition-colors">
-                                <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 mx-auto rounded-[12px] sm:rounded-2xl bg-cyan-900/30 flex items-center justify-center text-cyan-400 border border-cyan-500/10 mb-3 md:mb-6">
+                            <div key={i} className="glass-panel p-3 sm:p-6 md:p-8 text-center hover:border-cyan-400/30 transition-colors">
+                                <div className="w-8 h-8 sm:w-12 sm:h-12 md:w-14 md:h-14 mx-auto rounded-[8px] sm:rounded-2xl bg-cyan-900/30 flex items-center justify-center text-cyan-400 border border-cyan-500/10 mb-2 md:mb-6">
                                     <Icon className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                                 </div>
-                                <h5 className="text-[14px] sm:text-lg md:text-xl font-bold text-white mb-1.5 md:mb-2 tracking-tight">{a.title}</h5>
-                                <div className="text-cyan-400 font-black text-[13px] sm:text-base md:text-lg mb-2 md:mb-4">{a.price}</div>
-                                <p className="text-gray-400 text-[11px] sm:text-sm md:text-base leading-relaxed">{a.desc}</p>
+                                <h5 className="text-[9px] sm:text-lg md:text-xl font-bold text-white mb-1 md:mb-2 tracking-tight leading-tight">{a.title}</h5>
+                                <div className="text-cyan-400 font-black text-[8px] sm:text-base md:text-lg mb-1 md:mb-4">{a.price.split(' ')[0] + ' ' + (a.price.split(' ')[1] || '')}</div>
+                                <p className="text-gray-400 text-[7px] sm:text-sm md:text-base leading-tight sm:leading-relaxed">{a.desc}</p>
                             </div>
                         );
                     })}
@@ -303,7 +303,7 @@ const AccountTab = () => (
 const tabs = [
     { id: 'website', label: 'Website', Component: WebsiteTab },
     { id: 'content', label: 'Content', Component: ContentTab },
-    { id: 'account', label: 'Account Mgmt', Component: AccountTab },
+    { id: 'account', label: 'Account Management', Component: AccountTab },
 ];
 
 const Pricing = () => {
@@ -316,9 +316,7 @@ const Pricing = () => {
 
                 {/* Header Large Scale */}
                 <div className="text-center mb-10 md:mb-28">
-                    <div className="inline-block px-3 py-1.5 md:px-4 md:py-2 rounded-full glass-panel mb-4 md:mb-8">
-                        <span className="text-cyan-400 text-[10px] md:text-sm font-bold uppercase tracking-widest">Investasi Transparan</span>
-                    </div>
+
 
                     <h2 className="text-section text-white mb-3 md:mb-6">
                         Pilih <span className="text-cyan-400">Paket</span> <br className="block sm:hidden" /> Terbaik
@@ -336,8 +334,8 @@ const Pricing = () => {
                             key={tab.id}
                             onClick={() => setActiveTab(tab.id)}
                             className={`px-4 sm:px-6 md:px-12 py-2 sm:py-3.5 md:py-4 flex-1 sm:flex-none sm:w-auto rounded-full text-[9px] sm:text-[11px] md:text-sm font-bold uppercase tracking-widest transition-all duration-400 ${activeTab === tab.id
-                                    ? 'bg-gradient-to-r from-cyan-400 to-blue-500 text-white shadow-xl shadow-cyan-900/20 scale-100 sm:scale-105'
-                                    : 'glass-panel text-gray-400 border-white/10 hover:text-white hover:border-cyan-400/30'
+                                ? 'bg-gradient-to-r from-cyan-400 to-blue-500 text-white shadow-xl shadow-cyan-900/20 scale-100 sm:scale-105'
+                                : 'glass-panel text-gray-400 border-white/10 hover:text-white hover:border-cyan-400/30'
                                 }`}
                         >
                             {tab.label}

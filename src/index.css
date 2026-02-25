@@ -156,9 +156,6 @@ html {
   border-radius: 4px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #00F0FF;
-}
 
 /* ===== FASHION OUTLIER LAYOUT UTILITIES ===== */
 .container-wide {

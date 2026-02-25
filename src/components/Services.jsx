@@ -5,15 +5,15 @@ const servicesData = [
     {
         category: "Produksi Profil",
         items: [
-            { title: "Website Portfolio", icon: Share2, desc: "Tampilkan karya terbaik dengan portfolio memukau." },
-            { title: "Website UMKM", icon: Layout, desc: "Halaman bisnis profesional dan modern." },
+            { title: "Web LandingPage", icon: Share2, desc: "Buat landing page yang menarik dan informatif." },
+            { title: "Web App", icon: Layout, desc: "Buat aplikasi web yang berfungsi dengan baik." },
             { title: "UI/UX Design", icon: Palette, desc: "Desain antarmuka user-friendly." }
         ]
     },
     {
         category: "Creative Service",
         items: [
-            { title: "Advertisements", icon: Megaphone, desc: "Iklan visual memikat untuk sosmed." },
+            { title: "Account Management", icon: Megaphone, desc: "Pengelolaan akun media sosial." },
             { title: "Content Creation", icon: Video, desc: "Konten engaging untuk identitas brand." }
         ]
     }
@@ -25,19 +25,15 @@ const Services = () => {
             <div className="container-wide">
 
                 {/* Header */}
-                <div className="mb-0 sm:mb-20 text-center md:text-left">
-                    <div className="inline-block px-3 py-1.5 md:px-4 md:py-2 rounded-full glass-panel mb-4 md:mb-8">
-                        <span className="text-cyan-400 text-[10px] md:text-sm font-bold uppercase tracking-widest">Layanan Utama</span>
-                    </div>
-
+                <div className="mb-0 sm:mb-20 flex flex-col items-center text-center w-full">
                     <h2 className="text-section text-white mb-3 md:mb-6 leading-tight">
-                        Solusi<br className="hidden md:block" />{' '}
+                        Solusi{' '}
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
                             Digital Premium
                         </span>
                     </h2>
 
-                    <p className="text-xs md:text-xl text-gray-400 max-w-2xl font-medium leading-relaxed mx-auto md:mx-0 mb-6">
+                    <p className="text-xs md:text-xl text-gray-400 max-w-2xl font-medium leading-relaxed mx-auto mb-6">
                         Kombinasi desain eksklusif dan fungsionalitas teknologi untuk menaikkan level brand Anda.
                     </p>
                 </div>
