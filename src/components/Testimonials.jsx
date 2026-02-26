@@ -5,8 +5,8 @@ const testimonials = [
     {
         id: 1,
         content: "Desain website e-commerce kami yang baru sangat luar biasa. Tim mampu menangkap esensi brand premium kami dan menerjemahkannya ke dalam user experience yang mulus. Konversi penjualan meningkat 40% setelah peluncuran.",
-        author: "Sarah L.",
-        role: "Founder, Fashion Outlier",
+        author: "Sarah",
+        role: "Founder, FashionStore",
         rating: 5,
         delay: "0.1s"
     },
@@ -14,7 +14,7 @@ const testimonials = [
         id: 2,
         content: "Sebagai klinik kesehatan mental, kami butuh platform yang menenangkan namun profesional. Mereka mengeksekusi visi kami dengan sangat sempurna. Sangat direkomendasikan untuk siapa saja yang butuh UI/UX berkelas.",
         author: "Dr. Adrian M.",
-        role: "Direktur Klinik, MindCare",
+        role: "Dr Klinik, MindCare",
         rating: 5,
         delay: "0.2s"
     },
@@ -29,16 +29,16 @@ const testimonials = [
     {
         id: 4,
         content: "Platform edukasi kami kini jauh lebih interaktif dan mudah diakses oleh murid-murid berkat redesign dari tim ini. Animasi dan elemen desainnya membuat proses belajar jadi tidak membosankan.",
-        author: "Dian P.",
-        role: "EduLasCode",
+        author: "Aziz",
+        role: "Owner, EduLad",
         rating: 4,
         delay: "0.4s"
     },
     {
         id: 5,
-        content: "Layanan account management mereka benar-benar membantu bisnis kami berkembang. Pertumbuhan organik dan strategi kontennya sangat tepat sasaran dan memberikan hasil nyata.",
-        author: "Budi S.",
-        role: "Owner, Kopi Senja",
+        content: "Platform digitalisasi UMKM yang mereka buat sangat membantu bisnis kami berkembang. Pertumbuhan organik dan strategi kontennya sangat tepat sasaran dan memberikan hasil nyata.",
+        author: "Yusuf",
+        role: "Owner, Warung Barokah Rasa",
         rating: 5,
         delay: "0.5s"
     },
