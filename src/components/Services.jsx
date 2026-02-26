@@ -3,7 +3,7 @@ import { Code, Layout, Palette, Share2, Video, Megaphone } from 'lucide-react';
 
 const servicesData = [
     {
-        category: "Produksi Profil",
+        category: "Produksi Web & UI/UX",
         items: [
             { title: "Web LandingPage", icon: Share2, desc: "Buat landing page yang menarik dan informatif." },
             { title: "Web App", icon: Layout, desc: "Buat aplikasi web yang berfungsi dengan baik." },

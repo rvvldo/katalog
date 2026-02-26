@@ -27,7 +27,7 @@ const Navbar = () => {
             <div className="container-wide">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
-                    <a href="#" className="text-2xl font-black tracking-tight text-white hover:opacity-80 transition-opacity">
+                    <a href="#" className="text-2xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white via-blue-100 to-cyan-500 hover:opacity-80 transition-opacity">
                         OUTLIER
                     </a>
 
@@ -77,13 +77,6 @@ const Navbar = () => {
                                     {link.name}
                                 </a>
                             ))}
-                            <a
-                                href="#contact"
-                                className="btn-primary-fashion w-full justify-center mt-2"
-                                onClick={() => setIsMobileMenuOpen(false)}
-                            >
-                                Pesan Sekarang
-                            </a>
                         </div>
                     </div>
                 )}

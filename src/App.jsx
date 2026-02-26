@@ -6,8 +6,10 @@ import Portfolio from './components/Portfolio';
 import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
+import ButtonWa from './components/buttons/ButtonWa';
 
 function App() {
+
   return (
     <div className="min-h-screen relative">
 
@@ -20,6 +22,7 @@ function App() {
         <Pricing />
         <Testimonials />
         <Footer />
+        <ButtonWa />
       </div>
     </div>
   );
