@@ -149,14 +149,6 @@ const WebsiteTab = () => {
                                     <span className="text-gray-400 text-[11px] sm:text-sm md:text-lg">Domain</span>
                                     <span className="text-white font-bold text-[11px] sm:text-sm md:text-lg text-right">{pkg.domain}</span>
                                 </div>
-                                <div className="flex justify-between items-center py-1.5 sm:py-2.5 md:py-3 border-b border-white/5 flex-wrap sm:flex-nowrap">
-                                    <span className="text-gray-400 text-[11px] sm:text-sm md:text-lg">Hosting</span>
-                                    <span className="text-white font-bold text-[11px] sm:text-sm md:text-lg text-right">{pkg.hosting}</span>
-                                </div>
-                                <div className="flex justify-between items-center py-1.5 sm:py-2.5 md:py-3 border-b border-white/5 flex-wrap sm:flex-nowrap">
-                                    <span className="text-gray-400 text-[11px] sm:text-sm md:text-lg">Design (1x)</span>
-                                    <span className="text-cyan-400 font-black text-[11px] sm:text-sm md:text-lg text-right">{pkg.designFee}</span>
-                                </div>
                             </div>
 
                             {/* Features list */}
