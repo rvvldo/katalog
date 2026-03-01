@@ -21,7 +21,7 @@ export default function ButtonWa() {
         <>
             {isMobileWindow && (
                 <div className="fixed bottom-4 left-4 z-10 animate-fadeIn" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
-                    <button onClick={() => window.open('https://wa.me/628123456789', '_blank')} className="rounded-3xl p-5 sm:p-10 md:p-16 hover:border-cyan-400/40 transition-colors duration-500 bg-gradient-to-br from-cyan-400 to-blue-500">
+                    <button onClick={() => window.open('https://wa.me/62881026176985', '_blank')} className="rounded-3xl p-5 sm:p-10 md:p-16 hover:border-cyan-400/40 transition-colors duration-500 bg-gradient-to-br from-cyan-400 to-blue-500">
                         <PhoneCallIcon className="w-4 h-4 md:w-6 md:h-6" />
                     </button>
                 </div>
