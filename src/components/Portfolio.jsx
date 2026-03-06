@@ -142,7 +142,7 @@ const Portfolio = () => {
                 </div>
 
                 {/* Tabs */}
-                <div className="flex flex-wrap justify-center md:justify-start gap-2 sm:gap-3 mb-10 md:mb-16">
+                <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10 md:mb-16">
                     {categories.map((category) => (
                         <button
                             key={category}
@@ -160,8 +160,8 @@ const Portfolio = () => {
                 {/* Projects Layout  */}
                 {filteredProjects.length > 0 ? (
                     <div className={`grid gap-3 md:gap-6 ${activeTab === 'Content Creation'
-                            ? 'grid-cols-2 sm:grid-cols-3'
-                            : 'grid-cols-2'
+                        ? 'grid-cols-2 sm:grid-cols-3'
+                        : 'grid-cols-2'
                         }`}>
                         {filteredProjects.map((project, idx) => {
                             const Icon = project.icon;
@@ -172,8 +172,8 @@ const Portfolio = () => {
                                 >
                                     {/* Top side: Image */}
                                     <div className={`relative overflow-hidden flex items-center justify-center bg-gray-900 w-full shrink-0 ${project.category === 'Content Creation'
-                                            ? 'aspect-[3/4]'
-                                            : 'h-[100px] sm:h-[180px] md:h-[240px]'
+                                        ? 'aspect-[3/4]'
+                                        : 'h-[100px] sm:h-[180px] md:h-[240px]'
                                         }`}>
 
                                         {/* Thumbnail Image */}
