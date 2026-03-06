@@ -40,7 +40,7 @@ const projects = [
         tags: ["React", "Portfolio"],
         url: "https://portofolio-outlier.vercel.app/",
         icon: Code,
-        background: "/thumbnail/portofolio.webp"
+        background: "/thumbnail/akuntan.webp"
     },
     {
         id: 5,
@@ -60,7 +60,7 @@ const projects = [
         tags: ["React", "E-Commerce"],
         url: "http://verdantia.outlier.web.id/",
         icon: Code,
-        background: "/thumbnail/tokobunga.webp"
+        background: "/thumbnail/bunga.webp"
     }
 ];
 
@@ -115,18 +115,14 @@ const Portfolio = () => {
                                     {/* Top side: Abstract Visual (Moved up for better grid looking) */}
                                     <div className="h-[100px] sm:h-[180px] md:h-[240px] relative overflow-hidden flex items-center justify-center bg-gray-900 w-full shrink-0">
 
-                                        {/* Iframe Thumbnail Container */}
-                                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-40 group-hover:opacity-100 transition-opacity duration-700">
-                                            <div className="w-[1440px] h-[1080px] shrink-0 origin-center scale-[0.3] sm:scale-[0.4] md:scale-[0.5] lg:scale-[0.6]">
-                                                <iframe
-                                                    src={project.url}
-                                                    title={`${project.title} live preview`}
-                                                    className="w-full h-full border-0"
-                                                    loading="lazy"
-                                                    tabIndex="-1"
-                                                />
-                                            </div>
-                                        </div>
+                                        {/* Thumbnail Image */}
+                                        <img
+                                            src={project.background}
+                                            alt={`${project.title} thumbnail`}
+                                            className="absolute inset-0 w-full h-full object-cover object-top opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                                            loading="lazy"
+                                            onError={(e) => { e.target.style.display = 'none'; }}
+                                        />
 
                                         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent to-[#050510]/80 pointer-events-none"></div>
 
