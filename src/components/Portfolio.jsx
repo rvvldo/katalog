@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
-import { ExternalLink, Palette, Heart, Code } from 'lucide-react';
+import { ExternalLink, Palette, Heart, Code, Image } from 'lucide-react';
+import poster1 from '../assets/poster/poster1.webp';
+import poster2 from '../assets/poster/poster2.webp';
+import poster3 from '../assets/poster/poster3.webp';
+import poster4 from '../assets/poster/poster4.webp';
+import poster5 from '../assets/poster/poster5.webp';
 
 const projects = [
     {
@@ -61,6 +66,56 @@ const projects = [
         url: "http://verdantia.outlier.web.id/",
         icon: Code,
         background: "/thumbnail/bunga.webp"
+    },
+    {
+        id: 7,
+        title: "Poster Promosi",
+        description: "Desain poster promosi produk dengan visual yang menarik dan eye-catching untuk kebutuhan marketing digital.",
+        category: "Content Creation",
+        tags: ["Desain Grafis", "Poster", "Marketing"],
+        url: null,
+        icon: Image,
+        background: poster1
+    },
+    {
+        id: 8,
+        title: "Social Media Content",
+        description: "Konten visual untuk platform media sosial, dirancang untuk meningkatkan engagement dan brand awareness.",
+        category: "Content Creation",
+        tags: ["Social Media", "Visual", "Branding"],
+        url: null,
+        icon: Image,
+        background: poster2
+    },
+    {
+        id: 9,
+        title: "Desain Iklan",
+        description: "Materi iklan digital yang kreatif dan persuasif untuk berbagai keperluan promosi bisnis.",
+        category: "Content Creation",
+        tags: ["Iklan", "Kreatif", "Digital"],
+        url: null,
+        icon: Image,
+        background: poster3
+    },
+    {
+        id: 10,
+        title: "Brand Visual",
+        description: "Identitas visual brand yang konsisten dan profesional untuk membangun citra bisnis yang kuat.",
+        category: "Content Creation",
+        tags: ["Branding", "Visual Identity", "Desain"],
+        url: null,
+        icon: Image,
+        background: poster4
+    },
+    {
+        id: 11,
+        title: "Konten Kreatif",
+        description: "Produksi konten kreatif berkualitas tinggi yang mampu menarik perhatian audiens target secara efektif.",
+        category: "Content Creation",
+        tags: ["Konten", "Kreatif", "Desain"],
+        url: null,
+        icon: Image,
+        background: poster5
     }
 ];
 
@@ -104,7 +159,10 @@ const Portfolio = () => {
 
                 {/* Projects Layout  */}
                 {filteredProjects.length > 0 ? (
-                    <div className="grid grid-cols-2 gap-3 md:gap-8">
+                    <div className={`grid gap-3 md:gap-6 ${activeTab === 'Content Creation'
+                            ? 'grid-cols-2 sm:grid-cols-3'
+                            : 'grid-cols-2'
+                        }`}>
                         {filteredProjects.map((project, idx) => {
                             const Icon = project.icon;
                             return (
@@ -112,8 +170,11 @@ const Portfolio = () => {
                                     key={project.id}
                                     className={`glass-panel overflow-hidden group hover:border-cyan-400/40 transition-all duration-700 hover:shadow-2xl hover:shadow-cyan-900/20 flex flex-col`}
                                 >
-                                    {/* Top side: Abstract Visual (Moved up for better grid looking) */}
-                                    <div className="h-[100px] sm:h-[180px] md:h-[240px] relative overflow-hidden flex items-center justify-center bg-gray-900 w-full shrink-0">
+                                    {/* Top side: Image */}
+                                    <div className={`relative overflow-hidden flex items-center justify-center bg-gray-900 w-full shrink-0 ${project.category === 'Content Creation'
+                                            ? 'aspect-[3/4]'
+                                            : 'h-[100px] sm:h-[180px] md:h-[240px]'
+                                        }`}>
 
                                         {/* Thumbnail Image */}
                                         <img
@@ -161,15 +222,17 @@ const Portfolio = () => {
                                             </div>
                                         </div>
 
-                                        <a
-                                            href={project.url}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="btn-secondary-fashion w-full sm:w-fit justify-center gap-1.5 md:gap-2 text-[8px] sm:text-xs md:text-sm py-1.5 sm:py-2 px-3"
-                                        >
-                                            Live
-                                            <ExternalLink className="w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-4 md:h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                                        </a>
+                                        {project.url && (
+                                            <a
+                                                href={project.url}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="btn-secondary-fashion w-full sm:w-fit justify-center gap-1.5 md:gap-2 text-[8px] sm:text-xs md:text-sm py-1.5 sm:py-2 px-3"
+                                            >
+                                                Live
+                                                <ExternalLink className="w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-4 md:h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                                            </a>
+                                        )}
                                     </div>
                                 </div>
                             );
